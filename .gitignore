@@ -1,0 +1,5 @@
+Security.db
+users.db
+__pycache__/
+*.pyc
+.vscode/

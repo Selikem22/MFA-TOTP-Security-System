@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invalid Login</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4c6ef5, #22b8cf);
+    }
+    .card{
+      width:420px;
+      background:#fff;
+      border-radius:12px;
+      padding:40px 30px;
+      text-align:center;
+      box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    }
+    .icon{font-size:56px; margin-bottom:10px;}
+    h2{margin:0 0 10px; color:#333;}
+    p{color:#555; margin:0 0 22px; line-height:1.4;}
+    .btn{
+      display:inline-block;
+      padding:12px 20px;
+      background:#4c6ef5;
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      transition:0.2s;
+    }
+    .btn:hover{background:#364fc7;}
+  </style>
+</head>
+<body>
+  <div class="card">
+  <div class="icon">⚠️</div>
+  <h2>Invalid Login</h2>
+  <p>Your email or password is incorrect.</p>
+
+  <a href="/login" class="btn">Back to Login</a>
+</div>

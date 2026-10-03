@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4c6ef5, #22b8cf);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            width: 400px;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            animation: pop 0.3s ease;
+        }
+
+        @keyframes pop {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .icon {
+            font-size: 60px;
+            color: #e03131;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #4c6ef5;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #364fc7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="icon">❌</div>
+        <h2>Access Denied</h2>
+        <p>The OTP you entered is invalid or has expired.<br>
+        Please try again.</p>
+
+        <a href="/otp" class="btn">Try Again</a>
+    </div>
+
+</body>
+</html>

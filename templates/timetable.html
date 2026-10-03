@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Timetable</title>
+    <style>
+
+
+    body {
+    min-height: 100vh;
+    background-image: url("/static/images/Class.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    body {
+        
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+    }
+
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background: #4c6ef5;
+            color: white;
+        }
+
+        tr:nth-child(even) td {
+            background: #f8f9ff;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto 20px;
+            width: 80%;
+        }
+
+        .btn {
+            padding: 8px 14px;
+            background: #4c6ef5;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <h3>Welcome, {{ email }}</h3>
+    <a href="/logout" class="btn">Logout</a>
+</div>
+
+<h2>Class Timetable</h2>
+
+<table>
+    <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Subject</th>
+        <th>Lecturer</th>
+    </tr>
+    <!-- Example rows – replace with your own -->
+    <tr>
+        <td>Monday</td>
+        <td>9:00 – 10:00</td>
+        <td>System Security</td>
+        <td>Dr. Ruggeri</td>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td>10:00 – 11:00</td>
+        <td>Data Mining</td>
+        <td>Dr. Armando</td>
+    </tr>
+</table>
+
+</body>
+</html>
